@@ -32,7 +32,7 @@ export default {
   },
   methods: {
     getData() {
-      this.$store.dispatch("fetchNews");
+      this.$store.dispatch("fetchBook");
     },
   },
   mounted() {
