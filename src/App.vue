@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper news-layout">
+  <div class="home">
     <router-view />
   </div>
 </template>
@@ -11,25 +11,12 @@ export default {
 };
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
+<style scoped>
+.home {
+  background-image: url("./assets/images/background.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 </style>
