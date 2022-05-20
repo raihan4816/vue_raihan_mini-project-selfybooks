@@ -1,8 +1,13 @@
 <template>
   <div class="home">
-    <nav class="d-sm-flex navbar navbar-expand-lg bg-dark p-2">
+    <nav class="d-sm-flex navbar navbar-expand-lg bg-dark p-2 ps-2">
       <div class="container-fluid">
-        <a class="navbar-brand text-light" href="/"
+        <a class="logo" href="/">
+          <div class="logo-image">
+            <img src="../assets/images/logo.png" width="50px" />
+          </div>
+        </a>
+        <a class="navbar-brand text-light mb-1 ms-3" href="/"
           ><font-awesome-icon icon="fa-solid fa-book-copy" />SelfyBooks</a
         >
         <button
@@ -101,4 +106,12 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.logo-image {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: -6px;
+}
+</style>
