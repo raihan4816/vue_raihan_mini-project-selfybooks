@@ -29,7 +29,7 @@ const httpLink = new HttpLink({
 });
 
 const wsLink = new WebSocketLink({
-  uri: "ws://23-query-task.hasura.app/v1/graphql",
+  uri: "wss://23-query-task.hasura.app/v1/graphql",
   options: {
     reconnect: true,
     inactivityTimeout: 30000,
