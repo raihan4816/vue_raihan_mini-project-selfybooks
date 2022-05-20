@@ -1,8 +1,15 @@
-const { defineConfig } = require("@vue/cli-service");
-module.exports = defineConfig({
-  transpileDependencies: true,
-  devServer: {
-    proxy: "https://localhost:8080",
+module.exports = {
+  chainWebpack: (config) => {
+    config.module
+      .rule("vue")
+      .use("vue-loader")
+      .loader("vue-loader")
+      .tap((options) => {
+        options.transpileOptions = options.transpileOptions || {};
+        options.transpileOptions.transforms =
+          options.transpileOptions.transforms || {};
+        options.transpileOptions.transforms.dangerousTaggedTemplateString = true;
+        return options;
+      });
   },
-  lintOnSave: false,
-});
+};

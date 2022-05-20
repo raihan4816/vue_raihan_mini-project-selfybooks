@@ -39,6 +39,41 @@
         </p>
       </div>
     </div>
+    <div>
+      <h2 class="mt-4 mb-3 text-center">Book Reviews</h2>
+      <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping" style="width: 10%"
+          >Name</span
+        >
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Name"
+          aria-label="Username"
+          aria-describedby="addon-wrapping"
+        />
+      </div>
+      <div class="input-group mb-3">
+        <span
+          class="input-group-text"
+          id="inputGroup-sizing-default"
+          style="width: 10%"
+          >Comment</span
+        >
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Comment"
+          aria-label="Sizing example input"
+          aria-describedby="inputGroup-sizing-default"
+        />
+      </div>
+      <input class="btn btn-primary text-end" type="button" value="Send" />
+    </div>
+    <div>
+      <h5 class="card-title mt-2">Name: Raihan</h5>
+      <p class="card-text">Comment: This book is insanely mindblowing.</p>
+    </div>
   </div>
 </template>
 
