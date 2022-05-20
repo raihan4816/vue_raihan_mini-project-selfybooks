@@ -110,11 +110,6 @@ export default {
     },
   },
   methods: {
-    onUpdated(previousResult, { subscriptionData }) {
-      return {
-        todoListTask: subscriptionData.data.todoListTask,
-      };
-    },
     addTodo() {
       this.todos.push({
         list: this.todo,
